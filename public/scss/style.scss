@@ -1,0 +1,150 @@
+// General coding
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// Styling of the head
+.top-nav-wrap {
+    background-color: #9b009d;
+    display: flex;
+    // align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+    .top-nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+
+        .input {
+            width: 50%;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .top-nav-btn {
+            padding: 1rem 2rem;
+            color: #0fedd7;
+            background-color: #00e173;
+            border-radius: 3px;
+        }
+
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+
+    .main-nav-logo {
+        width: 20rem;
+    }
+
+    .main-nav {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    gap: 2rem;
+    line-height: 2.4rem;
+    color: #4c4c67;
+    width: 80%;
+    margin: auto;
+
+    ul {
+        li::marker {
+            color: #9b009d;
+        }
+    }
+
+    .titre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        hr {
+            width: 5%;
+        }
+    }
+
+    .last {
+        padding-bottom: 3rem;
+
+        h2 {
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+
+footer {
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .footer-nav {
+        padding-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        .footer-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .icon {
+            padding: 1rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .footer-logo {
+        width: 20rem;
+    }
+
+    p {
+        color: #4a4742;
+    }
+}
