@@ -1,4 +1,12 @@
-* {
+/*
+phone
+tab-port
+tab-land
+big-desktop
+*/
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,6 +14,21 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 56%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -27,7 +50,13 @@ body a {
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  margin-right: 40%;
+  margin-right: 30vw;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .top-nav-wrap .top-nav {
+    margin-right: 15vw;
+  }
 }
 .top-nav-wrap .top-nav input {
   margin-left: 1rem;
@@ -51,19 +80,54 @@ nav {
   border: 1px solid rgb(197, 197, 197);
   margin-bottom: 5rem;
 }
+@media (max-width: 320px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav .main-nav-logo {
   width: 20rem;
 }
+@media (max-width: 1024px) {
+  nav .main-nav-logo {
+    width: 15rem;
+  }
+}
+@media (max-width: 768px) {
+  nav .main-nav-logo {
+    width: 10rem;
+  }
+}
 nav .coworking-nav {
-  width: 20rem;
+  width: 20%;
   font-size: 1.6rem;
   color: #363636;
+}
+@media (max-width: 1024px) {
+  nav .coworking-nav {
+    font-size: 1.4rem;
+    width: 10%;
+  }
+}
+@media (max-width: 320px) {
+  nav .coworking-nav {
+    align-self: flex-start;
+  }
 }
 nav .main-nav {
   font-size: 1.4rem;
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+}
+@media (max-width: 320px) {
+  nav .main-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 5rem 0;
+  }
 }
 nav .main-nav a {
   color: #363636;
@@ -94,6 +158,9 @@ main .titre hr {
 }
 main .last {
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 main .last h2 {
   padding-bottom: 2rem;
